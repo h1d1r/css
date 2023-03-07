@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        /*LINK - 
+      grid-template-columns: 1fr 1fr 1fr 1fr ;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+      kaç kolon ve çak satır olacak belirleniyor
+
+        ust-alan {
+        grid-column: 1 / 5;
+        grid-row: 1 / 2;
+        çak kolon kaç satır olacağı yazılıyor
+        üst alan 1 den beşe kadar son kolona kadar ve 1 den 2. satıra kadar
+
+        
+        css*/
+
+        .kapsayici {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr ;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.kapsayici div {
+  padding: 5px;
+}
+
+.ust-alan {
+  background: rgb(30, 159, 159);
+  grid-column: 1 / 5;
+  grid-row: 1 / 2;
+}
+
+.tanitim {
+  background: rgb(148, 225, 255);
+  grid-column: 2 / 5;
+  grid-row: 2 / 4;
+}
+
+.menu {
+  background: mistyrose;
+  grid-column: 1 / 2;
+  grid-row: 2 / 5;
+}
+
+.icerik {
+  background: deepskyblue;
+  grid-column: 2 / 5;
+  grid-row: 4 / 5;
+
+}
+
+.alt-alan {
+
+  background: springgreen;
+  grid-column: 1 / 5;
+  grid-row: 5 / 5;
+  
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+</style>
+
+</head>
+<body>
+    
+    <div class="kapsayici">
+        <div class="ust-alan">Üst Alan</div>
+        <div class="menu">Menü</div>
+        <div class="tanitim">tanitim</div>
+        <div class="icerik">İçerik</div>
+        <div class="alt-alan">Alt Alan</div>
+      </div>
+
+
+</body>
+</html>
